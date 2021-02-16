@@ -82,18 +82,18 @@ namespace BestBuyPracticeConsoleUI
                 //For the sake of simplicity we will just list out the category numbers with a Console.WriteLine() --> cw + tab + tab
                 Console.WriteLine("Enter the product's categoryID");
                 Console.WriteLine();
-                Console.WriteLine("1--> Computers");
-                Console.WriteLine("2--> Applinces");
-                Console.WriteLine("3--> Phones");
-                Console.WriteLine("4--> Audio");
-                Console.WriteLine("5--> Home Theater");
-                Console.WriteLine("6--> Printers");
-                Console.WriteLine("7--> Music");
-                Console.WriteLine("8--> Games");
-                Console.WriteLine("9--> Services");
-                Console.WriteLine("10--> Other");
+                Console.WriteLine("1  --> Computers");
+                Console.WriteLine("2  --> Applinces");
+                Console.WriteLine("3  --> Phones");
+                Console.WriteLine("4  --> Audio");
+                Console.WriteLine("5  --> Home Theater");
+                Console.WriteLine("6  --> Printers");
+                Console.WriteLine("7  --> Music");
+                Console.WriteLine("8  --> Games");
+                Console.WriteLine("9  --> Services");
+                Console.WriteLine("10 --> Other");
                 Console.WriteLine();
-                Console.WriteLine("Enter a number from above: ");
+                Console.Write("Enter a number from above: ");
                 var productCategoryId = int.Parse(Console.ReadLine());//We must parse our Console.ReadLine for an integer bc CategoryID is an integer
 
                 prod.CreateProduct(productName, productPrice, productCategoryId);//Here our INSERT INTO method is called and it needs 3 arguments matching our 3 parameters types
